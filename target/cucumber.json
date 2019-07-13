@@ -1,0 +1,356 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5033875874,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Only api and ui job",
+        "description": "",
+        "id": "api;only-api-and-ui-job",
+        "after": [
+          {
+            "result": {
+              "duration": 114792481,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1581197913,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is authorized to create post",
+            "match": {
+              "location": "TestingStepDefs.user_is_authorized_to_create_post()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2284104083,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user creates API post with \"Cool title with API\", \"Cool content\" and \"publish\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Cool title with API",
+                  "offset": 28
+                },
+                {
+                  "val": "Cool content",
+                  "offset": 51
+                },
+                {
+                  "val": "publish",
+                  "offset": 70
+                }
+              ],
+              "location": "TestingStepDefs.user_creates_API_post_with_and(String,String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 18854935629,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user verifies the post with ui",
+            "match": {
+              "location": "TestingStepDefs.user_verifies_the_post_with_ui()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@apiUi"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3120739426,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Only ui and api job",
+        "description": "",
+        "id": "api;only-ui-and-api-job",
+        "after": [
+          {
+            "result": {
+              "duration": 138023674,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4264791001,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user is authorized to create post through ui",
+            "match": {
+              "location": "TestingStepDefs.user_is_authorized_to_create_post_through_ui()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 26264989149,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user creates UI post with \"Good title with UI\", \"Good content\" and \"publish\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Good title with UI",
+                  "offset": 27
+                },
+                {
+                  "val": "Good content",
+                  "offset": 49
+                },
+                {
+                  "val": "publish",
+                  "offset": 68
+                }
+              ],
+              "location": "TestingStepDefs.user_creates_UI_post_with_and(String,String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1154711761,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user verifies the post with api",
+            "match": {
+              "location": "TestingStepDefs.user_verifies_the_post_with_api()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 10,
+            "name": "@uiApi"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2167040696,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Only ui and DB job",
+        "description": "",
+        "id": "api;only-ui-and-db-job",
+        "after": [
+          {
+            "result": {
+              "duration": 176077617,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3970361749,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user is authorized to create post through ui",
+            "match": {
+              "location": "TestingStepDefs.user_is_authorized_to_create_post_through_ui()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 23995970290,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user creates UI post with \"Great title with UI\", \"Great content\" and \"publish\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Great title with UI",
+                  "offset": 27
+                },
+                {
+                  "val": "Great content",
+                  "offset": 50
+                },
+                {
+                  "val": "publish",
+                  "offset": 70
+                }
+              ],
+              "location": "TestingStepDefs.user_creates_UI_post_with_and(String,String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 637959430,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user verifies the post with DB",
+            "match": {
+              "location": "TestingStepDefs.user_verifies_the_post_with_DB()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 16,
+            "name": "@uiDB"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2123917035,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "Only DB and api job",
+        "description": "",
+        "id": "api;only-db-and-api-job",
+        "after": [
+          {
+            "result": {
+              "duration": 139722671,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9639260,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user is authorized to create post",
+            "match": {
+              "location": "TestingStepDefs.user_is_authorized_to_create_post()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 52709705,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "user creates post with JDBC",
+            "match": {
+              "location": "TestingStepDefs.user_creates_post_with_JDBC()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1346012733,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "user verifies the JDBC post with api",
+            "match": {
+              "location": "TestingStepDefs.user_verifies_the_JDBC_post_with_api()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 22,
+            "name": "@DBapi"
+          }
+        ]
+      }
+    ],
+    "name": "API",
+    "description": "",
+    "id": "api",
+    "keyword": "Feature",
+    "uri": "testing.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@testing"
+      }
+    ]
+  }
+]
